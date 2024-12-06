@@ -26,27 +26,41 @@
           alt="Logo profissional"
         />
       </div>
-      <nav id="menu" data-aos="fade-right" class="hidden w-full sm:w-auto">
+      <nav
+        id="nav-bar"
+        data-aos="fade-right"
+        class="w-[90rem] sm:w-auto absolute top-0 left-0 h-[100vh] sm:h-auto hidden sm:block"
+      >
         <ul
           class="flex flex-col sm:flex-row bg-[#626262] bg-opacity-60 backdrop-blur-2xl p-3 rounded-[10px] font-montserrat font-regular gap-4 sm:gap-7"
         >
-          <li class="text-[16px] sm:text-[18px] text-white hover:text-[#00D8E0] hover:bg-[#4f4f4f] hover:bg-opacity-50 transition-all duration-300 ease-in-out px-4 py-2 rounded-md">
+          <li
+            class="text-[16px] sm:text-[18px] text-white hover:text-[#00D8E0] hover:bg-[#4f4f4f] hover:bg-opacity-50 transition-all duration-300 ease-in-out px-4 py-2 rounded-md"
+          >
             <a href="#">Sobre Mim</a>
           </li>
-          <li class="text-[16px] sm:text-[18px] text-white hover:text-[#00D8E0] hover:bg-[#4f4f4f] hover:bg-opacity-50 transition-all duration-300 ease-in-out px-4 py-2 rounded-md">
+          <li
+            class="text-[16px] sm:text-[18px] text-white hover:text-[#00D8E0] hover:bg-[#4f4f4f] hover:bg-opacity-50 transition-all duration-300 ease-in-out px-4 py-2 rounded-md"
+          >
             <a href="#">Tecnologias</a>
           </li>
-          <li class="text-[16px] sm:text-[18px] text-white hover:text-[#00D8E0] hover:bg-[#4f4f4f] hover:bg-opacity-50 transition-all duration-300 ease-in-out px-4 py-2 rounded-md">
+          <li
+            class="text-[16px] sm:text-[18px] text-white hover:text-[#00D8E0] hover:bg-[#4f4f4f] hover:bg-opacity-50 transition-all duration-300 ease-in-out px-4 py-2 rounded-md"
+          >
             <a href="#">Projetos</a>
           </li>
-          <li class="text-[16px] sm:text-[18px] text-white hover:text-[#00D8E0] hover:bg-[#4f4f4f] hover:bg-opacity-50 transition-all duration-300 ease-in-out px-4 py-2 rounded-md">
+          <li
+            class="text-[16px] sm:text-[18px] text-white hover:text-[#00D8E0] hover:bg-[#4f4f4f] hover:bg-opacity-50 transition-all duration-300 ease-in-out px-4 py-2 rounded-md"
+          >
             <a href="#">Contato</a>
           </li>
         </ul>
       </nav>
-      
-      <div id="bnt-icon" onclick="eventBnt()" data-aos="fade-right" class="flex ml-5 mt-4 sm:mt-0 gap-x-2">
-        <i
+
+      <div  class="flex ml-5 mt-4 sm:mt-0 gap-x-2">
+        <i data-aos="fade-right"
+          id="menu-icon"
+          onclick="handleClick()"
           class="fa-solid fa-bars cursor-pointer mb-8 text-[#626262] hover:text-[#00D8E0] text-4xl sm:text-5xl transition-all duration-300 ease-in-out"
         ></i>
       </div>
@@ -92,13 +106,12 @@
       </div>
     </main>
 
-    <!-- LINK MAIN JS -->
-     <script src="js/script.js"></script>
-
     <!-- LINK JS ANIMATION -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <!-- LINK MAIN JS -->
+    <script src="/js/script.js" defer></script>
   </body>
 </html>
