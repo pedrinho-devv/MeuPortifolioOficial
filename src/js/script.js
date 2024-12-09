@@ -1,5 +1,5 @@
-const meubnt = document.querySelector("#menu-icon");
-const navBar = document.querySelector("#nav-bar");
+const meubnt = document.getElementById('menu-icon');
+const navBar = document.getElementById('nav-bar');
 
 
 function handleClick() {

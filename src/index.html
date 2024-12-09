@@ -16,7 +16,7 @@
   <body class="bg-[#080808]">
     <!-- HEADER -->
     <header
-      class="mt-6 w-full px-4 flex sm:flex-row items-center justify-between"
+      class="mt-6 w-full px-4 flex sm:flex-row items-center justify-between relative"
     >
       <div class="mb-4 sm:mb-0">
         <img
@@ -57,8 +57,9 @@
         </ul>
       </nav>
 
-      <div  class="flex ml-5 mt-4 sm:mt-0 gap-x-2">
-        <i data-aos="fade-right"
+      <div class="flex ml-5 mt-4 sm:mt-0 gap-x-2">
+        <i
+          data-aos="fade-right"
           id="menu-icon"
           onclick="handleClick()"
           class="fa-solid fa-bars cursor-pointer mb-8 text-[#626262] hover:text-[#00D8E0] text-4xl sm:text-5xl transition-all duration-300 ease-in-out"
@@ -67,9 +68,8 @@
     </header>
 
     <!-- CONTENT MAIN -->
-    <main
-      class="flex flex-col sm:flex-row items-center justify-between px-4 py-6 mt-6"
-    >
+    <main class="flex flex-col sm:flex-row items-center justify-between px-4 py-6 mt-6 mb-20">
+
       <!-- Texto -->
       <div data-aos="fade-right" class="text-center sm:text-left p-4 sm:p-10">
         <h1 class="text-[24px] sm:text-[38px] text-[#626262]">
@@ -106,12 +106,30 @@
       </div>
     </main>
 
+
+   <!-- SECTION ABOUT -->
+<section class="h-full flex flex-col items-center justify-center mt-20">
+  <div class="flex flex-col items-center justify-center">
+    <h2 class="text-[#626262] text-4xl text-center mb-20">Sobre Mim</h2>
+    <div class="relative w-[340px] h-[420px] bg-[#626262] rounded-xl">
+      <!-- A imagem com posicionamento absoluto -->
+      <img
+        class="object-contain absolute rounded-lg"
+        style="top: -20px; left: 10%; width: 380px; height: auto;"
+        src="img/portfoliofoto2.jpg"
+        alt="Imagem do portfólio"
+      />
+    </div>
+  </div>
+</section>
+
+
     <!-- LINK JS ANIMATION -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <!-- LINK MAIN JS -->
-    <script src="/js/script.js" defer></script>
+    <script src="js/script.j  s" defer></script>
   </body>
 </html>
