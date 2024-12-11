@@ -3,7 +3,7 @@ const navBar = document.getElementById('nav-bar');
 
 
 function handleClick() {
-    navBar.classList.toggle("hidden"); 
+    navBar.classList.remove("display"); 
 }
 
 
